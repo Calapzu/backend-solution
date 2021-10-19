@@ -1,4 +1,4 @@
-package co.com.sofka.questions.businessrouter;
+package co.com.sofka.questions.bussinesrouter;
 
 import co.com.sofka.questions.bussinesusecase.VerifyUserQuestionUseCase;
 import co.com.sofka.questions.model.QuestionDTO;

@@ -14,6 +14,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 
 @Configuration
 public class UpdateQuestionRouter {
+
     @Bean
     public RouterFunction<ServerResponse> modificarQuestions(UpdateUseCase updateUseCase){
         return route(PUT("/modificarQuestion").and(accept(MediaType.APPLICATION_JSON)),
