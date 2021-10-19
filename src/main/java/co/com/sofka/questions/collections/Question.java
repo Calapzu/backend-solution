@@ -12,6 +12,8 @@ public class Question {
     private String question;
     private String type;
     private String category;
+    private Integer version = 0;
+    private Boolean modified = false;
 
 
     public String getId() {
@@ -52,5 +54,21 @@ public class Question {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    public Boolean getModified() {
+        return modified;
+    }
+
+    public void setModified(Boolean modified) {
+        this.modified = modified;
     }
 }

@@ -17,6 +17,8 @@ public class QuestionDTO {
     private String type;
     @NotBlank
     private String category;
+    private Integer version;
+    private Boolean modified;
     private List<AnswerDTO> answers;
 
 
@@ -31,12 +33,14 @@ public class QuestionDTO {
         this.category = category;
     }
 
-    public QuestionDTO(String id, String userId, String question, String type, String category) {
+    public QuestionDTO(String id, String userId, String question, String type, String category, Integer version, Boolean modified) {
         this.id = id;
         this.userId = userId;
         this.question = question;
         this.type = type;
         this.category = category;
+        this.version = version;
+        this.modified = modified;
     }
 
     public List<AnswerDTO> getAnswers() {
@@ -86,6 +90,22 @@ public class QuestionDTO {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    public Boolean getModified() {
+        return modified;
+    }
+
+    public void setModified(Boolean modified) {
+        this.modified = modified;
     }
 
     @Override

@@ -15,6 +15,8 @@ public class AnswerDTO {
 
     private Integer position;
 
+    private Integer vote;
+
 
     public AnswerDTO() {
 
@@ -57,6 +59,14 @@ public class AnswerDTO {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public Integer getVote() {
+        return vote;
+    }
+
+    public void setVote(Integer vote) {
+        this.vote = vote;
     }
 
     @Override

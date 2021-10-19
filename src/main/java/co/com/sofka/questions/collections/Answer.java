@@ -11,6 +11,7 @@ public class Answer {
     private String questionId;
     private String answer;
     private Integer position;
+    private Integer vote;
 
     public Integer getPosition() {
         return position;
@@ -50,5 +51,13 @@ public class Answer {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public Integer getVote() {
+        return vote;
+    }
+
+    public void setVote(Integer vote) {
+        this.vote = vote;
     }
 }
